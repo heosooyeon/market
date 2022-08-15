@@ -1,133 +1,78 @@
-div {
-  display:block;
+body {
+  font-family:'noto sans';
 }
 
-div, th, td, li, dt, dd, p {
-  word-break: relative;
-}
-
-#header, #container, #content {
-  position:relative;
-} 
-
-
-#gnbLogoContainer {
-  margin-top: 0 auto;
-}
-
-.NavBarImg {
-  width:103px;
-  height:79px;
-}
-
-.logo {
-  left:0;
-  bottom:6px;
-  width:100%;
-  height:79px;
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
   text-align: center;
 }
-
-li {
-  display: list-item;
-  /*/text-align: -webkit-match-parent;/*/
-  float: left;
+.ad {
+  width:1050px;
+  height:140px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
-ol, ul {
-  list-style: none;
-}
 
-#userMenu{
-  float:right;
-  padding-right: 17%;
-}
+.cropped {
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+  /* border: 5px solid black; */
+  }
+  
+  .cropped img {
+  margin: -10px 0px 0px -180px;
+  }
 
-#userMenu *{
-  font-weight: bold;
-  letter-spacing: -.3px;
-  font-size: 12px;
-}
+  .prodImgAndFunc {
+    position:relative;
+    overflow:hidden;
+  }
 
-a{
-  text-decoration-line: none;
-}
+  .prodImgAndFunc .prodImg {
+    transition: all 0.3s linear;
+  }
+  .prodImgAndFunc:hover .prodImg {
+    transform:scale(1.09);
+  }
 
-.menu{
-  margin-right: 10px;
-}
+  ul li {
+    float:left;
+  }
 
-#userMenu .link_menu_join{
-  color : #5f0080;
-}
+  .card--badge {
+    position: absolute;
+    bottom : 10px;
+    right: 5px;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor:pointer
+  }
+  span {
+    margin:0;
+  }
 
-#userMenu .link_menu_login{
-  color : #333;
-}
+  .bascket {
+    cursor:pointer
+  }
 
-#userMenu .link_menu_lst{
-  color : #333;
-}
 
-.Menuicon{
-  width : 20px;
-  height : 25px;
-  overflow : hidden;
-  position : relative;
-  margin-left: 50px;
-}
-
-.mapicon{
-  width : 25px;
-  height : 25px;
-  padding:5px;
-  overflow : hidden;
-  position : relative;
-}
-
-.hearticon{
-  width : 25px;
-  height : 25px;
-  padding:5px;
-  overflow : hidden;
-  position : relative;
-}
-
-.saveicon{
-  width : 25px;
-  height : 25px;
-  padding:5px;
-  overflow : hidden;
-  position : relative;
-}
-
-.searchicon{
-  width : 25px;
-  height : 25px;
-  padding:5px;
-  overflow : hidden;
-  position : relative;
-}
-
-#body{
-  float: left;
-
-}
-
-#icon{
-  float : right;
-  padding-right: 17%;
-}
-
-#search{
-  border-radius: 20px;
-  width:245px;
-  height: 35px;
-  font-size:10px;
-  background-color: #e9e9e9;
-  border:0 solid black;
-}
-
-#search::placeholder{
-  font-weight: bold;
-}
+  .card-descrip-badge p {
+    margin:0
+  }
+  
+  .card-descrip-badge {
+    position: absolute;
+    background-color: #bd76ff;
+    top:0;
+    left:0;
+    color: white;
+    font-weight:550;
+    font-size:14px;
+    padding:8px 8px;
+  }
