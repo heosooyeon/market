@@ -42,7 +42,7 @@ export default function NavBar() {
             </h1>
         <div className="funcmenu">
             <ul style={{marginLeft:'-60px'}}>
-                <li className='menu' onClick={ClickList}><img style={{marginRight:'8px'}} src={process.env.PUBLIC_URL+"/ico_gnb_all_off.webp"}></img><a>카테고리</a></li>
+                <li className='menu' onClick={ClickList} ><img style={{marginRight:'8px'}} src={process.env.PUBLIC_URL+"/ico_gnb_all_off.webp"}></img><a>카테고리</a></li>
                 <li className='menu'><a>신상품</a></li>
                 <li className='menu'><a>베스트</a></li>
                 <li className='menu'><a>알뜰쇼핑</a></li>
